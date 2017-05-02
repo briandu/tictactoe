@@ -1,10 +1,19 @@
 function startGame() {
   document.turn = "X";
+  setMessage(document.turn + " get's to start.")
+}
+
+function setMessage(msg) {
+    document.getElementById("message").innerText = msg;
 }
 
 function nextMove(square) {
-  square.innerText = document.turn;
-  switchTurn();
+  if(square.innerText == ''){
+    square.innerText = document.turn;
+    switchTurn();
+  } else {
+    setMessage("Pick another square.")
+  }
 }
 
 function switchTurn() {
