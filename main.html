@@ -5,24 +5,26 @@
     <link rel="stylesheet" href="main.css">
     <title>Tic Tac Toe</title>
   </head>
-  <body>
+  <body onload="startGame();">
     <h1>Tac tac toe in JAVASCRIPT</h1>
-    <table>
+    <div id="message">message here.</div>
+    <table border="1">
       <tr>
-        <td class="Square">x</td>
-        <td class="Square">o</td>
-        <td class="Square">x</td>
+        <td class="Square" onclick="nextMove(this)"></td>
+        <td class="Square" onclick="nextMove(this)"></td>
+        <td class="Square" onclick="nextMove(this)"></td>
       </tr>
       <tr>
-        <td class="Square">o</td>
-        <td class="Square">x</td>
-        <td class="Square">o</td>
+        <td class="Square" onclick="nextMove(this)"></td>
+        <td class="Square" onclick="nextMove(this)"></td>
+        <td class="Square" onclick="nextMove(this)"></td>
       </tr>
       <tr>
-        <td class="Square">x</td>
-        <td class="Square">o</td>
-        <td class="Square">x</td>
+        <td class="Square" onclick="nextMove(this)"></td>
+        <td class="Square" onclick="nextMove(this)"></td>
+        <td class="Square" onclick="nextMove(this)"></td>
       </tr>
     </table>
+    <script src="main.js"></script>
   </body>
 </html>
