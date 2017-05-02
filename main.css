@@ -1,15 +1,54 @@
+html {
+  background-color: #385062;
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat"
+}
+
 body {
+  height: 100%;
   width: 550px;
   margin: auto;
 }
 
+table {
+  margin: auto;
+}
+
 h1 {
-  border-bottom: 1px solid black;
+  color: white;
+  text-align: center;
+}
+
+.table_wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_container {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .Square {
   height: 80px;
   width: 80px;
   font-size: 45pt;
+  text-align: center;
+}
+
+#message {
+  color: white;
+  text-align: center;
+}
+
+#restart {
+  color: white;
   text-align: center;
 }
