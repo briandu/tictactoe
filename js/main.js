@@ -4,8 +4,7 @@ function startGame() {
     clearBox(i);
   }
 
-
-  document.turn = "X";
+  document.turn = "X" ;
   document.winner = null;
   setMessage(document.turn + " get's to start.")
 }
