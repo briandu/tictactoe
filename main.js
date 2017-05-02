@@ -1,4 +1,10 @@
 function startGame() {
+
+  for(var i = 1; i <= 9; i++){
+    clearBox(i);
+  }
+
+
   document.turn = "X";
   document.winner = null;
   setMessage(document.turn + " get's to start.")
@@ -57,4 +63,8 @@ function checkRow(a, b, c, move) {
 
 function getBox(number) {
   return document.getElementById("s" + number).innerText;
+}
+
+function clearBox(number) {
+  document.getElementById("s" + number).innerText = "";
 }
