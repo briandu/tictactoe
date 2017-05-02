@@ -11,13 +11,50 @@ body {
   margin: auto;
 }
 
-table {
-  margin: auto;
-}
-
 h1 {
   color: white;
   text-align: center;
+}
+
+table {
+  margin: auto;
+  /*max-width: 300px;
+  max-height: 300px;*/
+  align-items: center;
+  justify-content: center;
+}
+
+table tr:first-child td {
+  border-top: none;
+}
+
+tr:nth-child(2) td {
+  position: relative;
+  top: -4px;
+}
+
+tr:nth-child(3) td {
+  position: relative;
+  top: -8px;
+  border-bottom: none;
+}
+
+td:nth-child(3) {
+  border-right: none;
+}
+
+td {
+
+}
+
+td:nth-child(2) {
+  position: relative;
+  left: -2px;
+}
+
+td:nth-child(3) {
+  position: relative;
+  left: -4px;
 }
 
 .table_wrapper {
@@ -37,10 +74,14 @@ h1 {
 }
 
 .Square {
-  height: 80px;
-  width: 80px;
-  font-size: 45pt;
+  height: 100px;
+  width: 100px;
   text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: solid 2px #6a6a6a;
+  border-left: none;
+  font-size: 45pt;
 }
 
 #message {
